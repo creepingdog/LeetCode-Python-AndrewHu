@@ -72,7 +72,7 @@ def romanToInt(s: str) -> int:
     res, i = 0, 0
     while i < len(s):
         tmp = i + 2
-        c = s[i:tmp = i+2]
+        c = s[i:tmp]
         if c in char_map:
             res += char_map[c]
             i = tmp
@@ -86,3 +86,9 @@ def romanToInt(s: str) -> int:
     #
     return res
 #
+
+
+if __name__ == '__main__':
+    import doctest
+
+    doctest.testmod()
