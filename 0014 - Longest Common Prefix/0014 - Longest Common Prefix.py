@@ -1,4 +1,7 @@
-def longestCommonPrefix(strs: List[str]) -> str:
+from typing import List
+
+
+def longest_common_prefix(strs: List[str]) -> str:
     """
     Write a function to find the longest common prefix string amongst an array of strings.
 
@@ -16,11 +19,11 @@ def longestCommonPrefix(strs: List[str]) -> str:
     Note:
     All given inputs are in lowercase letters a-z.
 
-    >>> longestCommonPrefix(["flower","flow","flight"])
+    >>> longest_common_prefix(["flower","flow","flight"])
     'fl'
-    >>> longestCommonPrefix(["dog","racecar","car"])
+    >>> longest_common_prefix(["dog","racecar","car"])
     ''
-    >>> longestCommonPrefix(["aa","a"])
+    >>> longest_common_prefix(["aa","a"])
     'a'
     """
 

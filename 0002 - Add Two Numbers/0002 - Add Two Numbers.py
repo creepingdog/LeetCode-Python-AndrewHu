@@ -93,6 +93,7 @@ def add_two_numbers(l1: ListNode, l2: ListNode) -> ListNode:
     return head
 #
 
+
 def add_two_numbers_2(l1: ListNode, l2: ListNode) -> ListNode:
     h, carry = None, 0
     while l1 or l2:

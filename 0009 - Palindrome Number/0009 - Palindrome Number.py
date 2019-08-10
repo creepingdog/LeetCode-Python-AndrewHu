@@ -1,4 +1,4 @@
-def isPalindrome(x: int) -> bool:
+def is_palindrome(x: int) -> bool:
     """
     Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
@@ -19,15 +19,15 @@ def isPalindrome(x: int) -> bool:
     Follow up:
     Coud you solve it without converting the integer to a string?
 
-    >>> isPalindrome(121)
+    >>> is_palindrome(121)
     True
-    >>> isPalindrome(-121)
+    >>> is_palindrome(-121)
     False
-    >>> isPalindrome(10)
+    >>> is_palindrome(10)
     False
-    >>> isPalindrome(101)
+    >>> is_palindrome(101)
     True
-    >>> isPalindrome(21120)
+    >>> is_palindrome(21120)
     False
 
     """

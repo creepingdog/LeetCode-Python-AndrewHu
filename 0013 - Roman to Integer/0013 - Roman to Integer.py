@@ -1,4 +1,4 @@
-def romanToInt(s: str) -> int:
+def roman_to_int(s: str) -> int:
     """
     Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
@@ -43,15 +43,15 @@ def romanToInt(s: str) -> int:
     Output: 1994
     Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
-    >>> romanToInt('III')
+    >>> roman_to_int('III')
     3
-    >>> romanToInt('IV')
+    >>> roman_to_int('IV')
     4
-    >>> romanToInt('IX')
+    >>> roman_to_int('IX')
     9
-    >>> romanToInt('LVIII')
+    >>> roman_to_int('LVIII')
     58
-    >>> romanToInt('MCMXCIV')
+    >>> roman_to_int('MCMXCIV')
     1994
     """
 

@@ -1,4 +1,4 @@
-def myAtoi(str: str) -> int:
+def my_atoi(str: str) -> int:
     """
     Implement atoi which converts a string to an integer.
 
@@ -46,25 +46,25 @@ def myAtoi(str: str) -> int:
     Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer.
                  Thefore INT_MIN (−231) is returned.
 
-    >>> myAtoi("  -0012a42")
+    >>> my_atoi("  -0012a42")
     -12
 
-    >>> myAtoi("42")
+    >>> my_atoi("42")
     42
 
-    >>> myAtoi("+36")
+    >>> my_atoi("+36")
     36
 
-    >>> myAtoi("    -42")
+    >>> my_atoi("    -42")
     -42
 
-    >>> myAtoi("4193 with words")
+    >>> my_atoi("4193 with words")
     4193
 
-    >>> myAtoi("-91283472332")
+    >>> my_atoi("-91283472332")
     -2147483648
 
-    >>> myAtoi("91283472332")
+    >>> my_atoi("91283472332")
     2147483647
     """
 
