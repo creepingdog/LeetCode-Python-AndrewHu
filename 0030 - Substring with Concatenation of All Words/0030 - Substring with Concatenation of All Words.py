@@ -31,19 +31,23 @@ def find_substring(s: str, words: List[str]) -> List[int]:
         #
     length = len(words[0])
     size = len(s)
-    if size < length:
+    num_words = len(words)
+    if size < length * num_words:
         return list()
     #
     WORD_DICT = dict()
     for word in words:
         WORD_DICT[word] = WORD_DICT.get(word, 0) + 1
     #
-    # print(WORD_DICT)
-    num_words = len(words)
     res = list()
     word_dict = dict()
+    # print('size={}, length={}, num_words={}, range({})'.format(size, length, num_words, size-length*num_words))
     for i in range(size - length * num_words + 1):
         word_dict.update(WORD_DICT)
+        # print('word_dict={}'.format(word_dict))
+        # print('range({}, {}, {})'.format(i, i+(num_words-1)*length+1, length))
+
+        good = True
         for j in range(i, i + (num_words - 1) * length + 1, length):
             word_to_test = s[j:(j + length)]
             # print('j={}, word_to_test={}'.format(j, word_to_test))
@@ -52,9 +56,12 @@ def find_substring(s: str, words: List[str]) -> List[int]:
                 if word_dict[word_to_test] == 0:
                     del word_dict[word_to_test]
                 #
+            else:
+                good = False
+                break
             #
         #
-        if not word_dict:
+        if good and not word_dict:
             res.append(i)
         #
     #
